@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Preço Justo - Versão Gratuita</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Preço Justo - Grátis</h1>
+        <p>Baseada na estratégia de Luiz Barsi</p>
+        <div class="form-group">
+            <label for="currentPrice">Preço Atual da Ação (R$):</label>
+            <input type="text" id="currentPrice" placeholder="Ex: 26,65">
+        </div>
+        <div class="form-group">
+            <label for="currentDY">Dividend Yield Atual (%):</label>
+            <input type="text" id="currentDY" placeholder="Ex: 16,40">
+        </div>
+        <div class="form-group">
+            <label for="targetDY">Dividend Yield Desejado (%):</label>
+            <input type="text" id="targetDY" placeholder="Ex: 6">
+        </div>
+        <button onclick="calculateFairPrice()">Calcular Preço Justo</button>
+        <button onclick="resetCalculator()">Zerar</button>
+        <div class="result" id="result"></div>
+        <p><strong>Versão Premium:</strong> Assine para acesso a análises detalhadas e recomendações personalizadas!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
